@@ -1,0 +1,139 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;          /* Space from edges */
+    background-color: #131313;    /* Black background */
+    height: 80px;              /* Navbar height */
+    position: fixed;           /* Fix on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.navbar a {
+  text-decoration: none;   /* Underline remove */
+  color: inherit;          /* Text ka color parent se le */
+  outline: none;            /* Blue focus border remove */
+}
+
+/* Your Name on the left */
+.header-title {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 90px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #00e5ff;                /* Name color */
+    letter-spacing: 1px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Nav menu items on the right */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    padding: 90px;
+    list-style: none;
+    gap: 25px;                  /* Space between menu items */
+}
+
+.menu-btn{
+  display:none;
+  color:white;
+  cursor:pointer;
+}
+
+.nav-menu li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;                /* Default menu color */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    
+}
+
+/* Hover effect - color & underline */
+.nav-menu li:hover {
+    color: cyan;               /* Same as name */
+}
+
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: rgb(13, 192, 192);
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;               /* Underline appears on hover */
+}
+
+/* ===================== */
+/* Tablet screens */
+/* ===================== */
+
+@media (max-width: 1024px) {
+
+    .header-title{
+        padding-left:40px;
+        font-size:22px;
+    }
+
+    .nav-menu{
+        padding-right:40px;
+        gap:18px;
+    }
+
+    .nav-menu li{
+        font-size:0.9rem;
+    }
+}
+
+/* ===================== */
+/* Mobile menu */
+/* ===================== */
+
+@media (max-width: 900px){
+
+.nav-menu{
+        position: fixed;
+        top:80px;
+        right:-100%;
+        width:100px;
+        height:40vh;
+        background:#0f0f0f;
+
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+
+        padding-top:60px;
+        gap:30px;
+
+        transition:0.4s ease;
+}
+
+.nav-menu.active{
+        right:0;
+}
+
+.menu-btn{
+        display:block;
+        padding-right:25px;
+}
+
+.header-title{
+        padding-left:25px;
+}
+
+}

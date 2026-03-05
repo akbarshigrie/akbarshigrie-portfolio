@@ -1,0 +1,28 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background: #161513;
+  color: hwb(180 3% 13%);
+  font-family: 'Poppins', sans-serif;
+  animation: fadeInUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

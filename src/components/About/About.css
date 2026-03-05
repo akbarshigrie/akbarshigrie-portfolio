@@ -1,0 +1,95 @@
+/* ===== About Section ===== */
+.about {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 80px;
+    background: #000;
+    color: white;
+    
+}
+
+#about{
+    padding-top: 50px;
+}
+
+/* ===== Header ===== */
+.about-header {
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.about-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-header p {
+    margin-top: 12px;
+    color: #00e5ff;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.underline {
+    width: 0px;
+    height: 3px;
+    background: #00e5ff;
+    margin: 14px auto 0;
+    
+}
+
+/* ===== Content Layout ===== */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: -40px;
+    
+}
+
+/* ===== Text ===== */
+.about-text {
+    flex: -10;
+    margin-bottom: 140px;
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-text p {
+    margin-bottom: 50px;
+}
+
+/* ===== Image ===== */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30vh;
+}
+
+
+.about-image img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 280px;
+    }
+}
+
