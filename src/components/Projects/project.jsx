@@ -24,7 +24,7 @@ const projects = [
         description:
             "A data-driven project exploring historical Olympic trends such as gold medal age distribution, female participation growth, and country-wise medal performance through interactive visualizations and insights.",
         tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Gradio"],
-        image: "/images/Olympic.jpg",
+        image: "/images/olympics.jpg",
         github: "https://github.com/akbarshigrie/Olympic-Data-Analysis"
     },
 ];
