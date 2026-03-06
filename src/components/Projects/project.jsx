@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Project.css";
 import { FaGithub } from "react-icons/fa";
-import leafProcess from '../../assets/leafProcess.webp';
-import eCommerce from '../../assets/eCommerce.png';
-import Olympic from '../../assets/olympics.jpg';
 
 const projects = [
     {
@@ -11,7 +8,7 @@ const projects = [
         description:
             "Implemented a high-accuracy plant leaf disease detection system using YOLOv4 and the PlantVillage dataset. Performed dataset preprocessing, augmentation, training, and evaluation, achieving strong multi-class performance for real-time agricultural disease identification.",
         tech: ["Python", "OpenCV", "YOLOv4", "Darknet", "Data Augmentation", "Computer Vision", "Google Colab"],
-        image: leafProcess,
+        image: "/images/leafProcess.webp",
         github: "#"
     },
     {
@@ -19,7 +16,7 @@ const projects = [
         description:
             "Built an end-to-end AI automation system using n8n to manage Shopify store operations through a single intelligent agent. The system automates product management, order fulfillment, inventory tracking, sales analytics, marketing campaigns, and SEO audits. Integrated AI-driven insights and reporting to enable scalable operations.",
         tech: ["n8n", "AI Agents", "Shopify API", "OpenAI API", "Workflow Automation"],
-        image: eCommerce,
+        image: "/images/eCommerce.png",
         github: "#"
     },
     {
@@ -27,7 +24,7 @@ const projects = [
         description:
             "A data-driven project exploring historical Olympic trends such as gold medal age distribution, female participation growth, and country-wise medal performance through interactive visualizations and insights.",
         tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Gradio"],
-        image: Olympic,
+        image: "/images/Olympic.jpg",
         github: "https://github.com/akbarshigrie/Olympic-Data-Analysis"
     },
 ];
