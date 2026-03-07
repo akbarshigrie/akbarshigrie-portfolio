@@ -84,6 +84,17 @@
   transition: 0.3s ease;
 }
 
+@media (max-width: 768px){
+  .interests {
+  padding: 100px 8%;
+  background-color: #0d0d0d;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+}
+
+
 
 
 

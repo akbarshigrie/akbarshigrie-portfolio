@@ -56,13 +56,15 @@
     flex-wrap: wrap;
     gap: 25px;
     margin-left: 5%;
+    margin-top: 2%;
+
     border: 1px solid transparent;
 }
 
 /* Skill Card */
 .skill-card {
     background: #1a1a1a;
-    padding: 17px 30px;
+    padding: 18px 30px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -106,8 +108,24 @@
         font-size: 22px;
     }
 
+    .skills-section {
+    background-color: #0d0d0d;
+    min-height: 100vh;
+    padding: 80px 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
     .skill-card {
         font-size: 14px;
         padding: 10px 18px;
     }
+
+    .skills-grid {
+    display:inline-flex;
+    gap: 14px;
+    margin-left: 0%;
+    margin-top: 5%;
+    border: 1px solid transparent;
+}
 }

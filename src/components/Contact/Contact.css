@@ -170,7 +170,11 @@
 
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .contact-section {
+  background: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+}
   .contact-container {
     flex-direction: column;
   }
