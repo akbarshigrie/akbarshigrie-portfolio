@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
   return (
     <section id="about" className="about">
-      
+
       <div id="about" className="about-header">
         <h2>About Me</h2>
         <p>GET TO KNOW ME</p>
@@ -26,12 +26,11 @@ const About = () => {
             My goal is to grow as a professional in the AI and Tech industry while continuously learning, innovating, and building meaningful solutions.
           </p>
         </div>
-
         <div className="about-image">
-          <img src="/images/profile.v2.png" alt="Profile" />
+          <img src="/images/profile.v2.webp" alt="Akbar" loading="lazy" />
         </div>
-
       </div>
+
     </section>
   );
 };

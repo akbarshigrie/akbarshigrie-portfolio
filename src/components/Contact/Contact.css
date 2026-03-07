@@ -172,9 +172,26 @@
 /* Responsive */
 @media (max-width: 768px) {
   .contact-section {
-  background: #0d0d0d;
-  font-family: 'Poppins', sans-serif;
-}
+    background: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contact-title {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .contact-subtitle {
+    text-align: center;
+    color: #00e5ff;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 70px;
+    position: relative;
+  }
+
   .contact-container {
     flex-direction: column;
   }
@@ -182,4 +199,12 @@
   .contact-right button {
     display: inline;
   }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
 }

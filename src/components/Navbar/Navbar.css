@@ -3,10 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px;          /* Space from edges */
-    background-color: #131313;    /* Black background */
-    height: 80px;              /* Navbar height */
-    position: fixed;           /* Fix on top */
+    margin: 0px;
+    /* Space from edges */
+    background-color: #131313;
+    /* Black background */
+    height: 80px;
+    /* Navbar height */
+    position: fixed;
+    /* Fix on top */
     top: 0;
     left: 0;
     width: 100%;
@@ -15,9 +19,12 @@
 }
 
 .navbar a {
-  text-decoration: none;   /* Underline remove */
-  color: inherit;          /* Text ka color parent se le */
-  outline: none;            /* Blue focus border remove */
+    text-decoration: none;
+    /* Underline remove */
+    color: inherit;
+    /* Text ka color parent se le */
+    outline: none;
+    /* Blue focus border remove */
 }
 
 /* Your Name on the left */
@@ -26,7 +33,8 @@
     padding: 0 90px;
     font-weight: 700;
     font-size: 26px;
-    color: #00e5ff;                /* Name color */
+    color: #00e5ff;
+    /* Name color */
     letter-spacing: 1px;
     cursor: pointer;
     white-space: nowrap;
@@ -38,29 +46,32 @@
     align-items: center;
     padding: 90px;
     list-style: none;
-    gap: 25px;                  /* Space between menu items */
+    gap: 25px;
+    /* Space between menu items */
 }
 
-.menu-btn{
-  display:none;
-  color:white;
-  cursor:pointer;
+.menu-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
 }
 
 .nav-menu li {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    color: #fff;                /* Default menu color */
+    color: #fff;
+    /* Default menu color */
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
-    
+
 }
 
 /* Hover effect - color & underline */
 .nav-menu li:hover {
-    color: cyan;               /* Same as name */
+    color: cyan;
+    /* Same as name */
 }
 
 .nav-menu li::after {
@@ -75,7 +86,8 @@
 }
 
 .nav-menu li:hover::after {
-    width: 100%;               /* Underline appears on hover */
+    width: 100%;
+    /* Underline appears on hover */
 }
 
 /* ===================== */
@@ -84,18 +96,18 @@
 
 @media (max-width: 1024px) {
 
-    .header-title{
-        padding-left:40px;
-        font-size:22px;
+    .header-title {
+        padding-left: 40px;
+        font-size: 22px;
     }
 
-    .nav-menu{
-        padding-right:40px;
-        gap:18px;
+    .nav-menu {
+        padding-right: 40px;
+        gap: 18px;
     }
 
-    .nav-menu li{
-        font-size:0.9rem;
+    .nav-menu li {
+        font-size: 0.9rem;
     }
 }
 
@@ -103,38 +115,48 @@
 /* Mobile menu */
 /* ===================== */
 
-@media (max-width: 900px){
+@media (max-width: 768px) {
 
-.nav-menu{
+    .nav-menu {
         position: fixed;
-        font-size: 14px;
-        top:70px;
-        right:-100%;
-        width:auto;
-        height:auto;
-        background:#131313;
-        flex-direction:column;
-        justify-content:center;
-        align-items: start;
+        font-size: 16px;
+        right: -200%;
+        top: 70px;
+        width: auto;
+        height: auto;
+        background: #131313;
+        flex-direction: column;
+        justify-content: left;
+        padding-top: 60px;
+        gap: 30px;
 
-        padding-top:60px;
-        gap:30px;
+        transition: 0.4s ease;
+    }
 
-        transition:0.4s ease;
-}
+    .nav-menu.active {
+        right: 0;
+    }
 
-.nav-menu.active{
-        right:0;
-}
+    .nav-menu li {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #fff;
+        /* Default menu color */
+        cursor: pointer;
+        position: relative;
+        transition: all 0.4s ease;
 
-.menu-btn{
-        display:block;
-        padding-right:25px;
-}
+    }
 
-.header-title{
-        padding-left:25px;
+    .menu-btn {
+        display: block;
+        padding-right: 25px;
+    }
+
+    .header-title {
+        padding-left: 25px;
         font-size: 1.2rem;
-}
+    }
 
 }

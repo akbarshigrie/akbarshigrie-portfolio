@@ -17,7 +17,7 @@ const projects = [
             "Built an end-to-end AI automation system using n8n to manage Shopify store operations through a single intelligent agent. The system automates product management, order fulfillment, inventory tracking, sales analytics, marketing campaigns, and SEO audits. Integrated AI-driven insights and reporting to enable scalable operations.",
         tech: ["n8n", "AI Agents", "Shopify API", "OpenAI API", "Workflow Automation"],
         image: "/images/eCommerce.png",
-        github: "#"
+        github: "https://github.com/akbarshigrie/AI-Agent-System-for-E-commerce-Automation-n8n-Shopify-"
     },
     {
         title: "Olympics Data Analysis & Visualization Dashboard",
@@ -26,6 +26,23 @@ const projects = [
         tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Gradio"],
         image: "/images/olympics.jpg",
         github: "https://github.com/akbarshigrie/Olympic-Data-Analysis"
+    },
+
+    {
+        title: "AI-Powered Website Chatbot - Customer Support",
+        description:
+            "Developed an AI-powered customer support chatbot using n8n automation and Google Gemini. The system reads company knowledge from structured documents, maintains conversation memory, and provides human-like responses. It also captures user contact details and automatically forwards leads and chat summaries to the support team via Gmail.",
+        tech: ["n8n", "AI Agents", "Google Gemini API", "LangChain", "Google Docs API", "Gmail API", "Workflow Automation", "Conversational AI"],
+        image: "/images/chatbot-ns.webp",
+        github: "https://github.com/akbarshigrie/AI-Powered-Website-Chatbot"
+    },
+    {
+        title: "AI-Powered LeadEngine for Automated Outreach",
+        description:
+            "Built an AI-driven lead generation and outreach automation workflow using n8n. The system automatically organizes and enriches lead data, extracts verified email addresses and profile details, and generates personalized cold emails using an AI agent. This workflow eliminates manual data handling and repetitive email writing while enabling scalable, human-like outreach for business growth and marketing campaigns.",
+        tech: ["n8n", "AI Agents", "OpenAI API", "Lead Data Enrichment", "Email Automation", "Workflow Automation"],
+        image: "/images/linkedInDataScrapeWorkflow.webp",
+        github: "https://github.com/akbarshigrie/AI-Powered-LeadEngine-for-Automated-Outreach"
     },
 ];
 
@@ -57,17 +74,17 @@ const Project = () => {
                                 <h3>{project.title}</h3>
 
                                 <div className="desc-wrapper">
-  <p className={`description ${openIndex === index ? "expanded" : ""}`}>
-    {project.description}
-  </p>
+                                    <p className={`description ${openIndex === index ? "expanded" : ""}`}>
+                                        {project.description}
+                                    </p>
 
-  <div
-    className={`read-toggle-btn ${openIndex === index ? "active" : ""}`}
-    onClick={() => toggleDescription(index)}
-  >
-    <span className="arrow"></span>
-  </div>
-</div>
+                                    <div
+                                        className={`read-toggle-btn ${openIndex === index ? "active" : ""}`}
+                                        onClick={() => toggleDescription(index)}
+                                    >
+                                        <span className="arrow"></span>
+                                    </div>
+                                </div>
 
                                 <div className="tech-stack">
                                     {project.tech.map((tech, i) => (

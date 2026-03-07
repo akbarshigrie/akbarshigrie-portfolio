@@ -4,6 +4,10 @@
   padding: 80px 0;
   color: white;
   font-family: "Poppins", sans-serif;
+  height: auto;
+  padding: 80px 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .project-container {
@@ -11,7 +15,7 @@
   margin: auto;
 }
 
-#projects{
+#projects {
   padding-top: 120px;
 }
 
@@ -41,7 +45,8 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 /* Card */
@@ -177,7 +182,6 @@
 }
 
 /* Read More toggle */
-/* Modern Toggle Button */
 .read-toggle-btn {
   width: 38px;
   height: 38px;
@@ -201,10 +205,10 @@
 
 /* Arrow Shape */
 .read-toggle-btn .arrow {
-  width: 8px;
-  height: 8px;
-  border-right: 2px solid #00e5ff;
-  border-bottom: 2px solid #00e5ff;
+  width: 9px;
+  height: 9px;
+  border-right: 3px solid #00e5ff;
+  border-bottom: 3px solid #00e5ff;
   transform: rotate(45deg);
   transition: 0.3s ease;
 }
@@ -223,4 +227,36 @@
   text-decoration: underline;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .project-section {
+    background-color: #000;
+    height: auto;
+    padding: 80px 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
 
+  .project-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .project-subtitle {
+    text-align: center;
+    color: #00e0ff;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+  }
+
+  .project-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+
+}

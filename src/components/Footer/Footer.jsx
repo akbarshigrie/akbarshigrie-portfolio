@@ -26,7 +26,7 @@ const Footer = () => {
         <hr className="footer-line" />
 
         <div className="footer-bottom">
-          <p>© 2026 Syed Akbar Ali. All Rights Reserved.</p>
+          <p>Copyright © 2026 Syed Akbar Ali. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

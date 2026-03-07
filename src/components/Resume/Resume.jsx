@@ -14,14 +14,6 @@ const Resume = () => {
 
       <div className="resume-content">
         <p>
-          I am a passionate AI and Machine Learning enthusiast with hands-on
-          experience in building intelligent systems, training models, and
-          developing modern web applications. My journey spans across AI,
-          data-driven solutions, and frontend development, where I focus on
-          creating impactful and scalable projects.
-        </p>
-
-        <p>
           My resume highlights my technical skills, projects, academic
           background, and practical experience in Artificial Intelligence,
           Generative AI, and full-stack development.

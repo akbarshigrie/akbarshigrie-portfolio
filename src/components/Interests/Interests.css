@@ -5,7 +5,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-#interests{
+#interests {
   padding-top: 120px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .interest-card h3 {
-  color:#ececec;
+  color: #ececec;
   margin-bottom: 15px;
   font-size: 26px;
   font-weight: 500;
@@ -71,7 +71,7 @@
   font-weight: 400;
   color: #aaa;
   line-height: 1.6;
-  
+
 }
 
 .interest-card:hover {
@@ -84,17 +84,30 @@
   transition: 0.3s ease;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .interests {
-  padding: 100px 8%;
-  background-color: #0d0d0d;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
+    padding: 100px 8%;
+    background-color: 0d0d0d;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .section-title {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .interest-card {
+    background: linear-gradient(145deg, #11161d, #0c1117);
+    backdrop-filter: blur(10px);
+    padding: 40px 25px;
+    width: 260px;
+    border-radius: 18px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    position: relative;
+  }
 
 }
-
-
-
-
-
