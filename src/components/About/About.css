@@ -116,15 +116,14 @@
 
     /* ===== Text ===== */
     .about-text {
-        flex: -10;
-        margin-bottom: 140px;
-        margin: -20px;
-        padding: 50 50px;
-        margin-right: -50px;
+        margin-bottom: 10px;
+        padding: 0px;
+        margin-right: -40px;
+        margin-left: -40px;
         color: #aaa;
         text-align:justify;
         font-size: 1rem;
-        line-height: 1.6;
+        line-height: 1.5;
         font-family: 'Poppins', sans-serif;
     }
 }

@@ -39,6 +39,10 @@
     cursor: pointer;
     white-space: nowrap;
 }
+.header-title img{
+    border-radius: 50%;
+    margin: 5px;
+}
 
 /* Nav menu items on the right */
 .nav-menu {

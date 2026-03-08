@@ -8,7 +8,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-
       <div className="header-title">Syed Akbar Ali</div>
 
       {/* Desktop Menu */}
