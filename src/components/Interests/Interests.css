@@ -87,7 +87,7 @@
 @media (max-width: 768px) {
   .interests {
     padding: 100px 8%;
-    background-color: 0d0d0d;
+    background: 0d0d0d;
     text-align: center;
     font-family: 'Poppins', sans-serif;
   }
@@ -99,7 +99,7 @@
   }
 
   .interest-card {
-    background: linear-gradient(145deg, #11161d, #0c1117);
+    background: linear-gradient(145deg, #11151b, #132a44);
     backdrop-filter: blur(10px);
     padding: 40px 25px;
     width: 260px;

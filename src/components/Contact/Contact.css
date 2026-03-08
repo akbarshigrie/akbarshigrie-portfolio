@@ -1,6 +1,9 @@
 .contact-section {
   padding: 120px 8%;
-  background: #0d0d0d;
+  /* background: #0d0d0d; */
+  background: radial-gradient(circle at 13% 30%, rgba(0, 229, 255, 0.15), transparent 40%),
+        radial-gradient(circle at 83% 70%, rgba(163, 61, 102, 0.15), transparent 40%),
+        #0a0a0a;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -172,7 +175,9 @@
 /* Responsive */
 @media (max-width: 768px) {
   .contact-section {
-    background: #0d0d0d;
+    background: radial-gradient(circle at 13% 30%, rgba(0, 229, 255, 0.15), transparent 40%),
+        radial-gradient(circle at 83% 70%, rgba(163, 61, 102, 0.15), transparent 40%),
+        #0a0a0a;
     font-family: 'Poppins', sans-serif;
   }
 

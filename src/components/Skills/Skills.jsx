@@ -1,9 +1,12 @@
 import React from "react";
 import "./Skills.css";
+// import { ReactComponent as GradioIcon } from "../../assets/gradio.svg";
+import { Gradio, Claude } from "@lobehub/icons";
 
 import {
   FaPython,
   FaRobot,
+  FaLink,
   FaBrain,
   FaEye,
   FaFire,
@@ -13,7 +16,9 @@ import {
   FaGitAlt,
   FaAws,
   FaTrophy,
-  FaLaptopCode
+  FaDatabase,
+  FaMousePointer,
+  FaChartLine
 } from "react-icons/fa";
 
 import {
@@ -35,8 +40,18 @@ import {
   SiPostman,
   SiVercel,
   SiN8N,
-  SiZapier
+  SiZapier,
+  SiGradio,
+  SiHuggingface,
+  SiJupyter,
+  SiGooglecolab,
+  SiNgrok,
 } from "react-icons/si";
+
+import { TbWebhook } from "react-icons/tb";
+
+import { VscVscode } from "react-icons/vsc";
+import { icons } from "lucide-react";
 
 const Skills = () => {
   return (
@@ -55,8 +70,8 @@ const Skills = () => {
             <div className="skill-card"><FaCode /> C++</div>
             <div className="skill-card"><SiPandas /> Pandas</div>
             <div className="skill-card"><SiNumpy /> NumPy</div>
-            <div className="skill-card">📊 Matplotlib</div>
-            <div className="skill-card">📈 Seaborn</div>
+            <div className="skill-card"><FaChartLine /> Matplotlib</div>
+            <div className="skill-card"><FaPython /> Seaborn</div>
           </div>
         </div>
 
@@ -65,8 +80,8 @@ const Skills = () => {
           <h2>Web Frameworks & APIs</h2>
           <div className="skills-grid">
             <div className="skill-card"><SiFastapi /> FastAPI</div>
-            <div className="skill-card">🔗 Webhook</div>
-            <div className="skill-card">🎛 Gradio</div>
+            <div className="skill-card"><TbWebhook /> Webhook</div>
+            <div className="skill-card"><Gradio size={20} /> Gradio</div>
             <div className="skill-card"><FaReact /> React</div>
             <div className="skill-card"><SiNextdotjs /> Next.js</div>
           </div>
@@ -116,10 +131,10 @@ const Skills = () => {
             <div className="skill-card"><SiPostman /> Postman</div>
             <div className="skill-card"><FaAws /> AWS</div>
             <div className="skill-card"><FaTrophy /> Kaggle</div>
-            <div className="skill-card">🤗 Hugging Face</div>
+            <div className="skill-card"><SiHuggingface /> Hugging Face</div>
             <div className="skill-card"><SiVercel /> Vercel</div>
-            <div className="skill-card">📓 Google Colab</div>
-            <div className="skill-card">🌐 ngrok</div>
+            <div className="skill-card"><SiGooglecolab/> Google Colab</div>
+            <div className="skill-card"><SiNgrok size={45} /> ngrok</div>
           </div>
         </div>
 
@@ -127,10 +142,10 @@ const Skills = () => {
         <div className="skill-category">
           <h2>Development Environments</h2>
           <div className="skills-grid">
-            <div className="skill-card">📓 Jupyter Notebook</div>
-            <div className="skill-card"><FaLaptopCode /> VS Code</div>
-            <div className="skill-card">💎 Cursor</div>
-            <div className="skill-card">🤖 Claude</div>
+            <div className="skill-card"><SiJupyter size={32} />Jupyter Notebook</div>
+            <div className="skill-card"><VscVscode /> VS Code</div>
+            <div className="skill-card"><FaCode /> Cursor AI</div>
+            <div className="skill-card"><Claude size={27} />Claude AI</div>
           </div>
         </div>
       </div>
